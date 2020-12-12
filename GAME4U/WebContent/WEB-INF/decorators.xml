@@ -1,0 +1,16 @@
+<decorators defaultdir="/WEB-INF/views/decorators">
+
+	<decorator name="iframeOut" page="iframeOut_decorator.jsp">
+		<pattern>/iframe.do</pattern>
+	</decorator>
+	
+	<decorator name="iframeIn" page="iframeIn_decorator.jsp">
+		<pattern>/**/*</pattern>
+		<pattern>/main.do</pattern>
+	</decorator> 
+	
+<!-- 	<excludes> -->
+<!-- 		<pattern>/common/log*</pattern> -->
+<!-- 	</excludes> -->
+	
+</decorators>
