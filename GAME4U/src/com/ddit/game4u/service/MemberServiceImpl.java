@@ -54,6 +54,25 @@ public class MemberServiceImpl implements MemberService{
 		return result;
 	}
 	
+	@Override
+	public boolean emailCheck(String email) throws SQLException {
+		boolean result = false;
+		MemberVO member = memberDAO.getMemberById(email);
+		if(member != null && member.getEmail().equals(email)) {
+			result = true;
+		}
+		
+		return result;
+	}
+	
+	@Override
+	public void regist(MemberVO member) throws SQLException {
+		String pwd = member.getPwd();
+		pwd = PasswordEncrypt.pwdToSHA256(pwd);
+		member.setPwd(pwd);
+		
+		memberDAO.insertMember(member);
+	}
 	
 	
 }

@@ -22,5 +22,12 @@ public class MemberDAOImpl implements MemberDAO{
 		return user;
 	}
 	
+	@Override
+	public void insertMember(MemberVO member) throws SQLException {
+		SqlSession session = factory.openSession(true);
+		session.update("Member-Mapper.insertMember", member);
+		session.close();
+	}
+	
 
 }

@@ -9,4 +9,6 @@ public interface MemberDAO {
 	//아이디로 멤버
 	public MemberVO getMemberById(String email) throws SQLException;
 	
+	void insertMember(MemberVO member) throws SQLException;
+	
 }
