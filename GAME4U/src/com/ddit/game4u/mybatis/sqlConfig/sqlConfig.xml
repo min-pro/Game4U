@@ -9,9 +9,7 @@
 	<typeAliases>
 		<typeAlias type="java.lang.String" alias="str"/>
 		<typeAlias type="java.lang.Integer" alias="int"/>
-		
-		
-		
+		<typeAlias type="com.ddit.game4u.dto.MemberVO" alias="member"/>
 	</typeAliases>
 	
 	<environments default="dev">
@@ -26,9 +24,7 @@
 		</environment>
 	</environments>
 	
-	
   <mappers>
- 
- 
+ 	<mapper resource="com/ddit/game4u/mybatis/mappers/Member-Mapper.xml"/> 
   </mappers>
 </configuration>

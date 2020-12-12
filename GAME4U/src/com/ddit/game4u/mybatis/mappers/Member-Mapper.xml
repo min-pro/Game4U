@@ -1,0 +1,9 @@
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Member-Mapper">
+	<select id="getMemberByEmail" parameterType="str" resultType="member">
+		select * from gu_users where email=#{email}
+	</select>
+</mapper>

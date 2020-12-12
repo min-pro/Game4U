@@ -4,6 +4,20 @@
 	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
+	<context-param>
+		<param-name>sqlSessionFactory</param-name>
+		<param-value>com.ddit.game4u.mybatis.OracleMyBatisSqlSessionFactory</param-value>
+	</context-param>
+	<context-param>
+		<param-name>memberService</param-name>
+		<param-value>com.ddit.game4u.service.MemberServiceImpl</param-value>
+	</context-param>
+	<context-param>
+		<param-name>memberDAO</param-name>
+		<param-value>com.ddit.game4u.dao.MemberDAOImpl</param-value>
+	</context-param>
+
+
 	<servlet>
 		<servlet-name>FrontServlet</servlet-name>
 		<servlet-class>com.ddit.game4u.dispatcher.FrontServlet</servlet-class>
