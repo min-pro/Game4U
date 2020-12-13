@@ -15,6 +15,4 @@ public interface GameDAO {
 
 	List<GameVO> getFreeList() throws SQLException;
 
-	List<GameVO> getReplyList() throws SQLException;
-
 }

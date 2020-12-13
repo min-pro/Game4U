@@ -43,10 +43,10 @@ public class HandlerMapper {
 				
 				for (Method method : methods) {
 					if (method.getName().contains("set")) {
-						String paramType=method.getParameterTypes()[0].getName();
+						String paramType = method.getParameterTypes()[0].getName();
 						
-						paramType=paramType.substring(paramType.lastIndexOf(".")+1);
-						paramType=(paramType.charAt(0) + "").toLowerCase()+ paramType.substring(1);
+						paramType = paramType.substring(paramType.lastIndexOf(".")+1);
+						paramType = (paramType.charAt(0) + "").toLowerCase()+ paramType.substring(1);
 						
 						try {
 							

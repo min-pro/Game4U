@@ -47,12 +47,5 @@ public class GameDAOImpl implements GameDAO{
 		return list;
 	}
 
-	@Override
-	public List<GameVO> getReplyList() throws SQLException {
-		SqlSession session = sqlSessionFactory.openSession();
-		List<GameVO> list = session.selectList("Game-Mapper.getReplyList");
-		session.close();
-		return list;
-	}
 
 }

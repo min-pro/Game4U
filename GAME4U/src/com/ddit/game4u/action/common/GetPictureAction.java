@@ -19,7 +19,9 @@ public class GetPictureAction implements Action{
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		String url = "";
+		
 		request.setCharacterEncoding("utf-8");
 		String picName = request.getParameter("picName");
 		String savedPath = GetUploadPath.getUploadPath("game.picture.upload");

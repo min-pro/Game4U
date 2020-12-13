@@ -6,7 +6,7 @@
 	<select id="selectMainMenu" resultType="menu">
 		select *
 		from gu_menu
-		order by mCode asc
+		order by mCode
 	</select>
 	
 	

@@ -9,6 +9,7 @@
 	<typeAliases>
 		<typeAlias type="java.lang.String" alias="str"/>
 		<typeAlias type="java.lang.Integer" alias="int"/>
+		
 		<typeAlias type="com.ddit.game4u.dto.MemberVO" alias="member"/>
 		<typeAlias type="com.ddit.game4u.dto.MenuVO" alias="menu"/>
 		<typeAlias type="com.ddit.game4u.dto.GameVO" alias="game"/>

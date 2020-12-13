@@ -8,6 +8,7 @@
 		<param-name>sqlSessionFactory</param-name>
 		<param-value>com.ddit.game4u.mybatis.OracleMyBatisSqlSessionFactory</param-value>
 	</context-param>
+
 	<context-param>
 		<param-name>memberService</param-name>
 		<param-value>com.ddit.game4u.service.MemberServiceImpl</param-value>
@@ -15,6 +16,24 @@
 	<context-param>
 		<param-name>memberDAO</param-name>
 		<param-value>com.ddit.game4u.dao.MemberDAOImpl</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>gameService</param-name>
+		<param-value>com.ddit.game4u.service.GameServiceImpl</param-value>
+	</context-param>
+	<context-param>
+		<param-name>gameDAO</param-name>
+		<param-value>com.ddit.game4u.dao.GameDAOImpl</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>menuService</param-name>
+		<param-value>com.ddit.game4u.service.MenuServiceImpl</param-value>
+	</context-param>
+	<context-param>
+		<param-name>menuDAO</param-name>
+		<param-value>com.ddit.game4u.dao.MenuDAOImpl</param-value>
 	</context-param>
 
 
@@ -39,8 +58,7 @@
 
 	<context-param>
 		<param-name>sqlSessionFactory</param-name>
-		<param-value>com.ddit.game4u.mybatis.OracleMyBatisSqlSessionFactory
-		</param-value>
+		<param-value>com.ddit.game4u.mybatis.OracleMyBatisSqlSessionFactory</param-value>
 	</context-param>
 
 	<filter>
@@ -68,4 +86,6 @@
 		<filter-name>sitemesh</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	
+	
 </web-app>

@@ -24,13 +24,11 @@ public class GameServiceImpl implements GameService{
 		List<GameVO> newList = gameDAO.getNewList();
 		List<GameVO> saleList = gameDAO.getSaleList();
 		List<GameVO> freeList = gameDAO.getFreeList();
-		List<GameVO> replyList = gameDAO.getReplyList();
 		
 		storeMap.put("popularList", popularList);
 		storeMap.put("newList", newList);
 		storeMap.put("saleList", saleList);
 		storeMap.put("freeList", freeList);
-		storeMap.put("replyList", replyList);
 		
 		return storeMap;
 	}

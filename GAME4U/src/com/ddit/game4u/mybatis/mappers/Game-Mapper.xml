@@ -4,31 +4,31 @@
   
 <mapper namespace="Game-Mapper">
 	
-	<select id="getPopularList">
+	<select id="getPopularList" resultType="game">
 		SELECT gno, gname, price, thumbnail, developer, simContent
 		FROM (SELECT gno, gname, price, thumbnail, developer, simContent FROM gu_game ORDER BY salerate DESC)
 		WHERE ROWNUM <![CDATA[ < ]]> 10
 	</select>
 	
-	<select id="getNewList">
+	<select id="getNewList" resultType="game">
 		SELECT gno, gname, price, thumbnail, developer
 		FROM (SELECT gno, gname, price, thumbnail, developer FROM gu_game ORDER BY reldate DESC)
 		WHERE ROWNUM <![CDATA[ < ]]> 4
 		
 	</select>
 	
-	<select id="getSaleList">
+	<select id="getSaleList" resultType="game">
 		SELECT gno, gname, price, thumbnail, developer
 		FROM
 		 	(SELECT gno, gname, price, thumbnail, developer
 		 	 FROM gu_game 
-		 	 WHERE sysdate BETWEEN stardate and enddate 
+		 	 WHERE sysdate BETWEEN startdate and enddate 
 		 	 ORDER BY salerate DESC)
 		WHERE ROWNUM <![CDATA[ < ]]> 12
 	
 	</select>
 	
-	<select id="getFreeList">
+	<select id="getFreeList" resultType="game">
 		SELECT gno, gname, thumbnail, developer
 		FROM (SELECT gno, gname, price, thumbnail, developer FROM gu_game WHERE price = 0 ORDER BY salerate DESC)
 		WHERE ROWNUM <![CDATA[ < ]]> 4
