@@ -11,8 +11,20 @@
 	
 	<update id="insertMember" parameterType="member">
 		INSERT
-		INTO gu_user (email, pwd, name)
+		INTO gu_users (email, pwd, name)
 		values (#{email}, #{pwd}, #{name})
+	</update>
+	
+	<update id="updateMember" parameterType="member">
+		UPDATE gu_users
+		SET name = #{name}, pwd = #{pwd}
+		WHERE email=#{email}
+	</update>
+	
+	<update id="updatePicture" parameterType="member">
+		UPDATE gu_users
+		SET picture = #{picture}
+		WHERE email=#{email}
 	</update>
 	
 </mapper>

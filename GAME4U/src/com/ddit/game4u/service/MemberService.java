@@ -15,5 +15,11 @@ public interface MemberService {
 	boolean emailCheck(String email) throws SQLException;
 
 	void regist(MemberVO member) throws SQLException;
+
+	public void modify(MemberVO member, HttpServletRequest request) throws SQLException;
+
+	public void pictureUpload(MemberVO member) throws SQLException;
+
+	public MemberVO getMemberByEmail(String email) throws SQLException;
 	
 }

@@ -35,6 +35,15 @@
 		<param-name>menuDAO</param-name>
 		<param-value>com.ddit.game4u.dao.MenuDAOImpl</param-value>
 	</context-param>
+	
+	<context-param>
+		<param-name>cardService</param-name>
+		<param-value>com.ddit.game4u.service.CardServiceImpl</param-value>
+	</context-param>
+	<context-param>
+		<param-name>cardDAO</param-name>
+		<param-value>com.ddit.game4u.dao.CardDAOImpl</param-value>
+	</context-param>
 
 
 	<servlet>

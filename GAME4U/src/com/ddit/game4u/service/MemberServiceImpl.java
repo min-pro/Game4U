@@ -74,5 +74,37 @@ public class MemberServiceImpl implements MemberService{
 		memberDAO.insertMember(member);
 	}
 	
+	@Override
+	public void modify(MemberVO member, HttpServletRequest request) throws SQLException {
+		String pwd = member.getPwd();
+		
+		if(pwd == null || pwd.equals("")) {
+			pwd = ((MemberVO)request.getSession().getAttribute("loginUser")).getPwd();
+			member.setPwd(pwd);
+		} else {
+			pwd = PasswordEncrypt.pwdToSHA256(pwd);
+			member.setPwd(pwd);
+		}
+		
+		memberDAO.updateMember(member);
+		
+	}
+	@Override
+	public void pictureUpload(MemberVO member) throws SQLException {
+		memberDAO.updatePicture(member);
+	}
 	
+	@Override
+	public MemberVO getMemberByEmail(String email) throws SQLException {
+		MemberVO member = memberDAO.getMemberById(email);
+		return member;
+	}
 }
+
+
+
+
+
+
+
+

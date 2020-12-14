@@ -29,5 +29,17 @@ public class MemberDAOImpl implements MemberDAO{
 		session.close();
 	}
 	
-
+	@Override
+	public void updateMember(MemberVO member) {
+		SqlSession session = factory.openSession(true);
+		session.update("Member-Mapper.updateMember", member);
+		session.close();
+	}
+	
+	@Override
+	public void updatePicture(MemberVO member) throws SQLException {
+		SqlSession session = factory.openSession(true);
+		session.update("Member-Mapper.updatePicture", member);
+		session.close();
+	}
 }

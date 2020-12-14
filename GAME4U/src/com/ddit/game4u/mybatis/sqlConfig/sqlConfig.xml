@@ -13,6 +13,7 @@
 		<typeAlias type="com.ddit.game4u.dto.MemberVO" alias="member"/>
 		<typeAlias type="com.ddit.game4u.dto.MenuVO" alias="menu"/>
 		<typeAlias type="com.ddit.game4u.dto.GameVO" alias="game"/>
+		<typeAlias type="com.ddit.game4u.dto.CardVO" alias="card"/>
 	</typeAliases>
 	
 	<environments default="dev">
@@ -31,5 +32,6 @@
  	<mapper resource="com/ddit/game4u/mybatis/mappers/Member-Mapper.xml"/> 
  	<mapper resource="com/ddit/game4u/mybatis/mappers/Menu-Mapper.xml"/> 
  	<mapper resource="com/ddit/game4u/mybatis/mappers/Game-Mapper.xml"/> 
+ 	<mapper resource="com/ddit/game4u/mybatis/mappers/Card-Mapper.xml"/> 
   </mappers>
 </configuration>

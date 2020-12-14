@@ -3,112 +3,113 @@ package com.ddit.game4u.dto;
 import java.util.Date;
 
 public class GameVO {
-	private int GNO           ;
-	private String GNAME         ;
-	private Date RELDATE       ;
-	private int PRICE         ;
-	private int SPRICE        ;
-	private Date STARTDATE     ;
-	private Date ENDDATE       ;
-	private String THUMBNAIL     ;
-	private String CONTENT       ;
-	private String SIMCONTENT    ;
-	private int SELLING       ;
-	private int SALERATE      ;
-	private String DEVELOPER     ;
-	private String DISTRIBUTOR   ;
-	private String DOWNURL		 ;
+	private int gno           ;
+	private String gname         ;
+	private Date relDate       ;
+	private int price         ;
+	private int sprice        ;
+	private Date startDate     ;
+	private Date endDate       ;
+	private String thumbnail     ;
+	private String content       ;
+	private String simcontent    ;
+	private int selling       ;
+	private int salerate      ;
+	private String developer     ;
+	private String distributor   ;
+	private String downurl		 ;
 	
-	public int getGNO() {
-		return GNO;
+	public int getGno() {
+		return gno;
 	}
-	public void setGNO(int gNO) {
-		GNO = gNO;
+	public void setGno(int gno) {
+		this.gno = gno;
 	}
-	public String getGNAME() {
-		return GNAME;
+	public String getGname() {
+		return gname;
 	}
-	public void setGNAME(String gNAME) {
-		GNAME = gNAME;
+	public void setGname(String gname) {
+		this.gname = gname;
 	}
-	public Date getRELDATE() {
-		return RELDATE;
+	public Date getRelDate() {
+		return relDate;
 	}
-	public void setRELDATE(Date rELDATE) {
-		RELDATE = rELDATE;
+	public void setRelDate(Date relDate) {
+		this.relDate = relDate;
 	}
-	public int getPRICE() {
-		return PRICE;
+	public int getPrice() {
+		return price;
 	}
-	public void setPRICE(int pRICE) {
-		PRICE = pRICE;
+	public void setPrice(int price) {
+		this.price = price;
 	}
-	public int getSPRICE() {
-		return SPRICE;
+	public int getSprice() {
+		return sprice;
 	}
-	public void setSPRICE(int sPRICE) {
-		SPRICE = sPRICE;
+	public void setSprice(int sprice) {
+		this.sprice = sprice;
 	}
-	public Date getSTARTDATE() {
-		return STARTDATE;
+	public Date getStartDate() {
+		return startDate;
 	}
-	public void setSTARTDATE(Date sTARTDATE) {
-		STARTDATE = sTARTDATE;
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
 	}
-	public Date getENDDATE() {
-		return ENDDATE;
+	public Date getEndDate() {
+		return endDate;
 	}
-	public void setENDDATE(Date eNDDATE) {
-		ENDDATE = eNDDATE;
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
 	}
-	public String getTHUMBNAIL() {
-		return THUMBNAIL;
+	public String getThumbnail() {
+		return thumbnail;
 	}
-	public void setTHUMBNAIL(String tHUMBNAIL) {
-		THUMBNAIL = tHUMBNAIL;
+	public void setThumbnail(String thumbnail) {
+		this.thumbnail = thumbnail;
 	}
-	public String getCONTENT() {
-		return CONTENT;
+	public String getContent() {
+		return content;
 	}
-	public void setCONTENT(String cONTENT) {
-		CONTENT = cONTENT;
+	public void setContent(String content) {
+		this.content = content;
 	}
-	public String getSIMCONTENT() {
-		return SIMCONTENT;
+	public String getSimcontent() {
+		return simcontent;
 	}
-	public void setSIMCONTENT(String sIMCONTENT) {
-		SIMCONTENT = sIMCONTENT;
+	public void setSimcontent(String simcontent) {
+		this.simcontent = simcontent;
 	}
-	public int getSELLING() {
-		return SELLING;
+	public int getSelling() {
+		return selling;
 	}
-	public void setSELLING(int sELLING) {
-		SELLING = sELLING;
+	public void setSelling(int selling) {
+		this.selling = selling;
 	}
-	public int getSALERATE() {
-		return SALERATE;
+	public int getSalerate() {
+		return salerate;
 	}
-	public void setSALERATE(int sALERATE) {
-		SALERATE = sALERATE;
+	public void setSalerate(int salerate) {
+		this.salerate = salerate;
 	}
-	public String getDEVELOPER() {
-		return DEVELOPER;
+	public String getDeveloper() {
+		return developer;
 	}
-	public void setDEVELOPER(String dEVELOPER) {
-		DEVELOPER = dEVELOPER;
+	public void setDeveloper(String developer) {
+		this.developer = developer;
 	}
-	public String getDISTRIBUTOR() {
-		return DISTRIBUTOR;
+	public String getDistributor() {
+		return distributor;
 	}
-	public void setDISTRIBUTOR(String dISTRIBUTOR) {
-		DISTRIBUTOR = dISTRIBUTOR;
+	public void setDistributor(String distributor) {
+		this.distributor = distributor;
 	}
-	public String getDOWNURL() {
-		return DOWNURL;
+	public String getDownurl() {
+		return downurl;
 	}
-	public void setDOWNURL(String dOWNURL) {
-		DOWNURL = dOWNURL;
+	public void setDownurl(String downurl) {
+		this.downurl = downurl;
 	}
+	
 	
 	
 }

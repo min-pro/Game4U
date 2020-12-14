@@ -10,5 +10,9 @@ public interface MemberDAO {
 	public MemberVO getMemberById(String email) throws SQLException;
 	
 	void insertMember(MemberVO member) throws SQLException;
-	
+
+	public void updateMember(MemberVO member) throws SQLException;
+
+	public void updatePicture(MemberVO member) throws SQLException;
+
 }

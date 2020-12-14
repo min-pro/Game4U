@@ -5,5 +5,5 @@
 
 
 <script>
-	location.href="iframe.do";
+	location.href="store/iframe.do";
 </script>

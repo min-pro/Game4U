@@ -1,0 +1,36 @@
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="Card-Mapper">
+
+	<select id="getCardSeq" resultType="int">
+		select gu_card_seq.nextval
+		from dual 
+	</select>
+	
+	<select id="selectCardList" resultType="card" parameterType="str">
+		SELECT *
+		FROM gu_card
+		WHERE email=#{email} 
+	</select>
+	
+	<select id="selectComList" resultType="str">
+		select *
+		from gu_cardcom
+	</select>
+	
+	<update id="insertCard" parameterType="card">
+		INSERT
+		INTO gu_card (cardno, email, coname, cardnum, valdate, cvc, name, zip, addr1, addr2, phone)
+		values (#{cardno}, #{email}, #{coName}, #{cardNum}, #{valDate}, #{cvc}, #{name}, #{zip}, #{addr1}, #{addr2}, #{phone})
+	</update>
+	
+	<update id="deleteCard" parameterType="int">
+		DELETE
+		FROM gu_card
+		WHERE cardno = #{cardno}
+	</update>
+	
+	
+</mapper>
